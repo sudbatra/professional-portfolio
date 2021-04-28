@@ -3,20 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(5, 40, 104, 0.333);
 }
 
 /* this will style the body section of the webpage */
 body { 
-   color: white;
+   
 }
 
 /*this section controls the styling for everything in the header section */
 header {
-
+    color: rgb(138, 235, 11);
 }
 header h1 {
-
+    color: rgb(45, 236, 19)
 }
 header nav {
 
@@ -32,3 +31,15 @@ header nav ul li a:hover {
 }
 
 /* this controls the footer section */
+footer {
+
+}
+footer h2 {
+
+}
+footer div {
+
+}
+footer a {
+
+}
