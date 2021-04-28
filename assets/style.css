@@ -1,0 +1,34 @@
+/* this section controls the margin, padding and box sizing for the entire webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(5, 40, 104, 0.333);
+}
+
+/* this will style the body section of the webpage */
+body { 
+   color: white;
+}
+
+/*this section controls the styling for everything in the header section */
+header {
+
+}
+header h1 {
+
+}
+header nav {
+
+}
+header nav ul {
+
+}
+header nav li {
+
+}
+header nav ul li a:hover {
+
+}
+
+/* this controls the footer section */
