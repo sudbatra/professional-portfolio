@@ -12,24 +12,47 @@ body {
 
 /*this section controls the styling for everything in the header section */
 header {
-    color: rgb(138, 235, 11);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(138, 235, 11);
 }
 header h1 {
-    color: rgb(45, 236, 19)
+    background-color: red;
+    color: black;
 }
-header nav {
+header nav ul   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
 
-}
-header nav ul {
-
-}
-header nav li {
-
-}
 header nav ul li a:hover {
 
 }
 
+.parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.child-1{
+    flex: 1 20%;   
+
+}
+.child-2 {
+    flex: 2 80%;
+}
+.image-1 {
+    display: flex;
+}
 /* this controls the footer section */
 footer {
 
