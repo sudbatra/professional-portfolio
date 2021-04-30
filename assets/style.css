@@ -44,11 +44,10 @@ header nav ul li a:hover {
 }
 .hero-img{
     background-image: url("../assets/images/dj-sud-logo-hero-img.JPG");
-    
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
