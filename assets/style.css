@@ -128,11 +128,16 @@ header nav ul li a:hover {
     grid-row-end: 5 ;
     padding-bottom: 25px;
     border: 5px solid #92cccd;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .item-1:hover {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1 ;
+    grid-row-end: 8 ;
     opacity: 1;
+
 }
 
 .img-1-d {
@@ -150,10 +155,14 @@ header nav ul li a:hover {
     grid-row-start: 5;
     grid-row-end: 8 ;
     border: 5px solid #92cccd;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .item-2:hover {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1 ;
+    grid-row-end: 8 ;
     opacity: 1;
 }
 
@@ -174,10 +183,14 @@ header nav ul li a:hover {
     grid-row-start: 5;
     grid-row-end: 8 ;
     border: 5px solid #92cccd;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .item-3:hover {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1 ;
+    grid-row-end: 8 ;
     opacity: 1;
 }
 
