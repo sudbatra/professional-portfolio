@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proffessional-Portfolio</title>
+        <title>Proffessional Portfolio</title>
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
     <body>
@@ -17,13 +17,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="About-Me">About Me</a> 
+                        <a href="#About-Me">About Me</a> 
                     </li>
                     <li>
-                        <a href="Work">Work</a>
+                        <a href="#Work">Work</a>
                     </li>
                     <li>
-                        <a href="Contact-me">Contact Me</a>
+                        <a href="#Contact-me">Contact Me</a>
                     </li>
                     <li>
                         <a href="assets/Resume - Sudhanshu Batra.pdf" target="_blank">Resume</a>
@@ -33,8 +33,8 @@
         </header>
         
         <section class="hero-img"> <!--this is the hero image section 1st section under main-->
-            <!--hero image goes here-->
-            <div class="ct-background">
+            <!--ct is for hero image cover text and its background with class of ct-background--> 
+            <div class="ct-background"> 
                 <h2 class="ct">
                     DJ SUD MUSIC
                 </h2>
@@ -45,27 +45,24 @@
         <main> <!--the main section includes 2 sub sections section 1 is hero img and section 2 will have 3 subsections incl. about me, work, contact me-->
             
                 
-            <section class="parent"> <!--parent section for about me-->
+            <section class="parent" id="About-Me"> <!--parent section for about me-->
                 <div class="child-1"> <!--child 1 for about me section, includes title e.g about me-->
                     <h2>About me</h1>
                 </div>
                 <div class="child-2"> <!--child 2 for about me section, includes the text for this sub-section-->
-                           
+    
                     <p>
-                        Hello, My name is Sudhanshu Batra. I am from Brampton, ON. I am pursuing Coding Bootcamp at the University of Toronto. 
-                        Thank you for visiting my page
-                    </p>
-                    <br>
-                    <p>
-                        I am a very passionate individual. I have always wanted to pursue Coding. So, I took advantage of this great opportunity and signed on with the Bootcamp. 
-                        My background is in Finance. Presently I am employed with the Royal Bank of Canada. Fun fact about me is that I started DJ'ing three years ago. 
-                        For as far as I can remember I have been into music. I started my music journey back in grade 3 when I started learning Tabla. I want to be able to produce my beats. 
-                        My goal with this course is to get the skills needed to be able to make and manage my website. 
+                        Hello, My name is Sudhanshu Batra. I am a highly motivated individual. Presently I am employed with Royal Bank of Canada as a Collections officer. 
+                        I started working with the bank in 2016 and have held multiple positions within the same department over the last five years. My passion for music led me to become a DJ/Music Producer. 
+                        I started “DJ SUD” brand in 2019, and now have hosted a few events before the global pandemic impacted the industry. 
+                        I have always wanted to learn to code and joined the Full Stack Coding Bootcamp with University of Toronto. 
+                        I have no previous coding experience whatsoever but the instructional team is amazing. Over the past 3 weeks I have learnt HTML, CSS and JavaScript. 
+                        I am looking forward to finishing up the program and start a new career in web development.   
                     </p>
                 </div>
             </section>
             <br>
-            <section class="parent"> <!--this is the 2nd sub section-->
+            <section class="parent" id="Work"> <!--this is the 2nd sub section-->
                 <div class="child-1"> <!--child 1 for work section includes the title of the child section e.g work-->
                     <h2>Work</h1>
                 </div>
@@ -73,32 +70,59 @@
                             
                     <div class="image"> 
                         <figure class="item-1">
-                            <img src="./assets/images/run-buddy v2.0 mockup.png" alt="run-buddy" class="images" />
+                            <a href="https://sudbatra.github.io/run-buddy/" target="_blank">
+                                <img src="./assets/images/run-buddy v2.0 mockup.png" alt="run-buddy" class="images" />
+                            </a>
                         </figure>
+                            <h2 class="img-1-d">
+                                Run Buddy
+                            </h2>
 
                         <figure class="item-2">
-                            <img src= "assets/images/horiseon.JPG" alt="run-buddy" class="images" />   
+                            <a href="https://sudbatra.github.io/Code-Refractor/" target="_blank">
+                                <img src= "assets/images/horiseon.JPG" alt="run-buddy" class="images" />   
+                            </a>
                         </figure>
+                            <h2 class="img-2-d">
+                                Horiseon
+                            </h2>
 
                         <figure class="item-3">
-                            <img src= "assets/images/test image 1-1.jpg" alt="run-buddy" class="images" />
+                            <a href="https://linktr.ee/djsud" target="_blank">
+                                <img src="./assets/images/led-video-wall-close-up.jpg" alt="run-buddy" class="images" />
+                            </a>
                         </figure>
+                            <h2 class="img-3-d">
+                                Linktree
+                            </h2>
                     </div>
                 </div>
             </section>
             <br>
-            <section class="parent"> <!--this is the 3rd sub section-->
+            <section class="parent" id="Contact-me"> <!--this is the 3rd sub section-->
                 <div class="child-1"> <!--child 1 for contact me section-->
                     <h2>Contact Me</h2>
                 </div>
                 <div class="child-2"> <!--chile 2 for contact me section, includes the text for the section-->
                     <!--Phone number, email, github, linkedin,-->
-                    <p>
-                        416-902-9121
-                    </p>
-                    <p>
+                    <ul>
+                        <li>
+                            📱 416-902-9121 
+
+                        </li>
+                    
+                        <li>
                         <a href="mailto:sudhanshubatra.19@gmail.com">sudhanshubatra.19@gmail.com </a>
-                    </p>
+                        </li>
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/sudhanshu-batra-548167109/" target="_blank">Linkedin </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/sudbatra" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>  
