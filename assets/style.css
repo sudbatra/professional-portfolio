@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* this will style the body section of the webpage */
 
 /* styling for the overall main section */
@@ -135,9 +138,9 @@ header nav ul li a:hover {
 
 .item-1:hover {
     grid-column-start: 1;
-    grid-column-end: 10;
+    grid-column-end: 8;
     grid-row-start: 1 ;
-    grid-row-end: 8 ;
+    grid-row-end: 5 ;
     opacity: 1;
 
 }
