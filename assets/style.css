@@ -16,7 +16,7 @@ body {
 
 }
 
-/*this section controls the styling for everything in the header section */
+/* this section controls the styling for everything in the header section */
 header {
     padding: 22px 36px;
     display: flex;
@@ -24,10 +24,13 @@ header {
     flex-wrap: wrap;
     background-color: #31343d
 }
+/* styling for the heading in the header section */
 header h1 {
     background-color: #92cccd;
     color: black;
 }
+
+/* styling for the nav unordered lists */
 header nav ul   {
     display: flex;
     flex-wrap: wrap;
@@ -44,9 +47,12 @@ header nav ul li a {
     
 }
 
+/* for the nav hover in the header section */
 header nav ul li a:hover {
     border-bottom: 3px solid #92ccc9;
 }
+
+/* hero image */
 .hero-img{
     background-image: url("../assets/images/dj-sud-logo-hero-img.JPG");
     background-position: center;
@@ -61,23 +67,25 @@ header nav ul li a:hover {
 
 }
 
+/* cover text */
 .ct {
     background-color: #92ccc9;
     position: relative;
-    right: 155px;
+    right: 20px;
     line-height: 1.6;
     padding-left: 12px;
     padding-right: 55px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    
-
 }
+
+/* background styling for cover text */
 .ct-background {
     padding-bottom: 25px;
     padding-right: 22px;
-
 }
+
+/* styling for the parent section */
 .parent {
     display: flex;
     justify-content: space-between;
@@ -85,26 +93,29 @@ header nav ul li a:hover {
     align-items:center;
     padding-top: 1.5%;
 }
+
+/* styling for the child-1 */
 .child-1{
     flex: 1 30%;   
     text-align: center;
     font-size: 30px;
     color: #445876;
-    
-
 }
+
+/* styling for child-2 */
 .child-2 {
     flex: 2 70%;
     color: #445876;
     font-size: 26px;
     font-family: Arial, Helvetica, sans-serif;
-    border-left: 8px solid red;
+    border-left: 8px solid #445876;
     padding-top: 2%;
     padding-left: 2.5%;
     padding-right: 2.5%;
     text-align: justify;
 }
 
+/* child-2 ul styling */
 .child-2 ul {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +124,8 @@ header nav ul li a:hover {
     list-style: none;
     padding-bottom: 5%;
 }
+
+/* styling for images on the webpage */
 .image {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -126,34 +139,39 @@ header nav ul li a:hover {
     object-fit: fill;
 }
 
+/* styling for the first image */
 .item-1 {
     grid-column-start: 1;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 5 ;
-    padding-bottom: 25px;
     border: 5px solid #92cccd;
     opacity: 0.5;
 }
 
+/* hover styling for image 1 */
 .item-1:hover {
     grid-column-start: 1;
-    grid-column-end: 8;
+    grid-column-end: 9;
     grid-row-start: 1 ;
     grid-row-end: 5 ;
     opacity: 1;
 
 }
 
+/* styling for the text on image 1 */
 .img-1-d {
     grid-column-start:1 ;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
     background-color: #92cccd;
-    
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 32px;
 }
 
+/* styling for 2nd image */
 .item-2 {
     grid-column-start: 1;
     grid-column-end: 6;
@@ -163,15 +181,17 @@ header nav ul li a:hover {
     opacity: 0.5;
 }
 
+/* hover styling for 2nd image */
 .item-2:hover {
     grid-column-start: 1;
-    grid-column-end: 10;
-    grid-row-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 5 ;
     grid-row-end: 8 ;
     opacity: 1;
+    
 }
 
-
+/* styling for the text on image 2 */
 .img-2-d {
     grid-column-start:1 ;
     grid-column-end: 2;
@@ -179,9 +199,12 @@ header nav ul li a:hover {
     grid-row-end: 8;
     background-color: #92cccd;
     padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
     
 } 
 
+/* styling for the 3rd image */
 .item-3 {
     grid-column-start: 6;
     grid-column-end: 10;
@@ -191,14 +214,16 @@ header nav ul li a:hover {
     opacity: 0.5;
 }
 
+/* styling for hover on the 3rd image */
 .item-3:hover {
-    grid-column-start: 1;
-    grid-column-end: 10;
-    grid-row-start: 1 ;
-    grid-row-end: 8 ;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 8;
     opacity: 1;
 }
 
+/* styling for the text on 3rd image */
 .img-3-d {
     grid-column-start:6 ;
     grid-column-end: 7;
@@ -206,12 +231,14 @@ header nav ul li a:hover {
     grid-row-end: 7;
     background-color: #92cccd; 
     padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
 } 
 
 /* Media query for smaller desktop screens */
 @media screen and (max-width:980px) {
     header {
-        padding-bottom: 20;
+        padding-bottom: 20px;
         padding-top: 20px;
         justify-content: center;
         position: relative;
@@ -246,41 +273,40 @@ header nav ul li a:hover {
     
     }
 
-    .ct-background
+    .hero-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }    
 }
 
 
 
 /* Media query for tablets and smaller devices */
-@media screen and (max-width:768px) {
+@media screen and (max-width:980px) {
     header {
-        padding-bottom: 20;
-
+        padding-bottom: 10px;
+        padding-top: 10px;
         justify-content: center;
-        position: relative;
-        
-        
+        position: relative;   
     }
 
     header h1 {
         width: 100%;
         text-align: center; 
-      
-        
+       
     }
 
     header nav ul {
-        margin-top: 20px;
+        margin-top: 10px;
         width: 100%;
         justify-content: center;
-  
-        
+       
     }
     header nav ul li a {
-        font-size: 10px;
-     
+        font-size: 15px;
+   
     }
-    
     .ct {
         position: relative;
         text-align: center;
@@ -290,6 +316,14 @@ header nav ul li a:hover {
         padding-left: 12px;
         padding-right: 55px;
         text-align: center;
+    
+    }
+
+    .hero-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }    
 }   
 
     
