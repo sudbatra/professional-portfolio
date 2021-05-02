@@ -10,6 +10,7 @@
 /* styling for the overall main section */
 body {
     background-color: #ededf6;
+
 }
 
 /*this section controls the styling for everything in the header section */
@@ -37,6 +38,7 @@ header nav ul li a {
     text-decoration: none;
     font-size: 1.75vw;
     color: #92ccc9
+    
 }
 
 header nav ul li a:hover {
@@ -206,24 +208,42 @@ header nav ul li a:hover {
 /* Media query for smaller desktop screens */
 @media screen and (max-width:980px) {
     header {
-        padding-bottom: 0;
+        padding-bottom: 20;
+        padding-top: 20px;
         justify-content: center;
         position: relative;
+        
     }
 
     header h1 {
         width: 100%;
-        text-align: center;
+        text-align: center; 
+       
     }
 
     header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
+       
     }
     header nav ul li a {
         font-size: 20px;
+   
     }
+    .ct {
+        position: relative;
+        text-align: center;
+        background-color: #92ccc9;
+        right: 5px;
+        line-height: 1.6;
+        padding-left: 12px;
+        padding-right: 55px;
+        text-align: center;
+    
+    }
+
+    .ct-background
 }
 
 
@@ -231,27 +251,42 @@ header nav ul li a:hover {
 /* Media query for tablets and smaller devices */
 @media screen and (max-width:768px) {
     header {
-        padding-bottom: 0;
+        padding-bottom: 20;
+
         justify-content: center;
         position: relative;
+        
+        
     }
-    
+
     header h1 {
         width: 100%;
-        text-align: center;
+        text-align: center; 
+      
+        
     }
-    
+
     header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
+  
+        
     }
     header nav ul li a {
-        font-size: 20px;
+        font-size: 10px;
+     
     }
     
-}
+    .ct {
+        position: relative;
+        text-align: center;
+        background-color: #92ccc9;
+        right: 5px;
+        line-height: 1.6;
+        padding-left: 12px;
+        padding-right: 55px;
+        text-align: center;
+}   
 
-
-    
     
