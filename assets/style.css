@@ -1,22 +1,22 @@
 /* this section controls the margin, padding and box sizing for the entire webpage */
 * {
     margin: 0;
-    padding: 0;
+    padding: %;
     box-sizing: border-box;
 }
 
+/* this function is used for smooth scroling for the webpage */
 html {
     scroll-behavior: smooth;
 }
-/* this will style the body section of the webpage */
+
 
 /* styling for the overall main section */
 body {
     background-color: #ededf6;
-
 }
 
-/* this section controls the styling for everything in the header section */
+/*this section controls the styling for everything in the header section */
 header {
     padding: 22px 36px;
     display: flex;
@@ -24,13 +24,12 @@ header {
     flex-wrap: wrap;
     background-color: #31343d
 }
-/* styling for the heading in the header section */
+/* styling for the heading h1 in the header */
 header h1 {
     background-color: #92cccd;
     color: black;
 }
-
-/* styling for the nav unordered lists */
+/* styling for the nav buttons */
 header nav ul   {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +37,7 @@ header nav ul   {
     align-items: center;
     list-style: none;
 }
-
+/* styling for the nav ul list and its anchor */
 header nav ul li a {
     padding: 12px 32px; 
     text-decoration: none;
@@ -46,13 +45,11 @@ header nav ul li a {
     color: #92ccc9
     
 }
-
-/* for the nav hover in the header section */
+/* hover section on the nav buttons in header */
 header nav ul li a:hover {
     border-bottom: 3px solid #92ccc9;
 }
-
-/* hero image */
+/* this section includes the hero image and its style */
 .hero-img{
     background-image: url("../assets/images/dj-sud-logo-hero-img.JPG");
     background-position: center;
@@ -64,14 +61,13 @@ header nav ul li a:hover {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end; 
-
 }
 
-/* cover text */
+/* ct = cover text on the hero image */
 .ct {
     background-color: #92ccc9;
     position: relative;
-    right: 20px;
+    right: 155px;
     line-height: 1.6;
     padding-left: 12px;
     padding-right: 55px;
@@ -79,13 +75,13 @@ header nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* background styling for cover text */
+/* text background for the cover text on the hero image */
 .ct-background {
     padding-bottom: 25px;
     padding-right: 22px;
 }
 
-/* styling for the parent section */
+/* styling for the parent section that includes child-1 and .child-2 */
 .parent {
     display: flex;
     justify-content: space-between;
@@ -94,7 +90,7 @@ header nav ul li a:hover {
     padding-top: 1.5%;
 }
 
-/* styling for the child-1 */
+/* controls the styling for child-1 i.e. title inisde the parent section e.g. About me, work and Contact me */
 .child-1{
     flex: 1 30%;   
     text-align: center;
@@ -102,7 +98,7 @@ header nav ul li a:hover {
     color: #445876;
 }
 
-/* styling for child-2 */
+/* controls the styling for child-2 i.e the p section and child 2 contains images */
 .child-2 {
     flex: 2 70%;
     color: #445876;
@@ -114,8 +110,7 @@ header nav ul li a:hover {
     padding-right: 2.5%;
     text-align: justify;
 }
-
-/* child-2 ul styling */
+/* child-2 unordered list */
 .child-2 ul {
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +120,7 @@ header nav ul li a:hover {
     padding-bottom: 5%;
 }
 
-/* styling for images on the webpage */
+/* controls the image sections styling */
 .image {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -139,59 +134,56 @@ header nav ul li a:hover {
     object-fit: fill;
 }
 
-/* styling for the first image */
+/* styling for the 1st image in the work section */
 .item-1 {
     grid-column-start: 1;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 5 ;
+    padding-bottom: 25px;
     border: 5px solid #92cccd;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
-/* hover styling for image 1 */
+/* controls the image hover on the 1st image */
 .item-1:hover {
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 1 ;
     grid-row-end: 5 ;
     opacity: 1;
-
 }
 
-/* styling for the text on image 1 */
+/* controls the text on image-1 */
 .img-1-d {
     grid-column-start:1 ;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 4;
     background-color: #92cccd;
-    padding-bottom: 25px;
     text-align: center;
-    font-size: 32px;
 }
 
-/* styling for 2nd image */
+/* controls the 2nd image for the work section */
 .item-2 {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 8 ;
     border: 5px solid #92cccd;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
-/* hover styling for 2nd image */
+/* controls the hover section for the 2nd image */
 .item-2:hover {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 5 ;
     grid-row-end: 8 ;
     opacity: 1;
-    
 }
 
-/* styling for the text on image 2 */
+/* controls the text on the 2nd image */
 .img-2-d {
     grid-column-start:1 ;
     grid-column-end: 2;
@@ -199,67 +191,62 @@ header nav ul li a:hover {
     grid-row-end: 8;
     background-color: #92cccd;
     padding-top: 20px;
-    text-align: center;
-    font-size: 32px;
-    
+    text-align: center; 
 } 
 
-/* styling for the 3rd image */
+/* controls the 3rd image in teh Work section */
 .item-3 {
-    grid-column-start: 6;
-    grid-column-end: 10;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 8 ;
     border: 5px solid #92cccd;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
-/* styling for hover on the 3rd image */
+/* controls the hover function on the 3rd image */
 .item-3:hover {
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end: 8;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 5 ;
+    grid-row-end: 8 ;
     opacity: 1;
 }
 
-/* styling for the text on 3rd image */
+/* controls the text on the 3rd iamge for the work section */
 .img-3-d {
-    grid-column-start:6 ;
+    grid-column-start:5;
     grid-column-end: 7;
     grid-row-start: 7;
     grid-row-end: 7;
     background-color: #92cccd; 
     padding-top: 20px;
     text-align: center;
-    font-size: 32px;
 } 
+
+/* styling for the semantic elements is completed here Next section is for media query */
 
 /* Media query for smaller desktop screens */
 @media screen and (max-width:980px) {
     header {
-        padding-bottom: 20px;
+        padding-bottom: 20;
         padding-top: 20px;
         justify-content: center;
         position: relative;
-        
     }
 
     header h1 {
         width: 100%;
         text-align: center; 
-       
     }
 
     header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
-       
     }
     header nav ul li a {
         font-size: 20px;
-   
     }
     .ct {
         position: relative;
@@ -270,41 +257,31 @@ header nav ul li a:hover {
         padding-left: 12px;
         padding-right: 55px;
         text-align: center;
-    
     }
-
-    .hero-img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-    }    
 }
 
 /* Media query for tablets and smaller devices */
-@media screen and (max-width:980px) {
+@media screen and (max-width:768px) {
     header {
-        padding-bottom: 10px;
-        padding-top: 10px;
+        padding-bottom: 20;
         justify-content: center;
         position: relative;   
     }
 
     header h1 {
         width: 100%;
-        text-align: left; 
-       
+        text-align: center; 
     }
 
     header nav ul {
-        margin-top: 10px;
+        margin-top: 20px;
         width: 100%;
-        justify-content: right;
-       
+        justify-content: center;
     }
     header nav ul li a {
-        font-size: 15px;
-   
+        font-size: 10px;
     }
+    
     .ct {
         position: relative;
         text-align: center;
@@ -314,14 +291,31 @@ header nav ul li a:hover {
         padding-left: 12px;
         padding-right: 55px;
         text-align: center;
-    
-    }
-
-    .hero-img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 300px;
-    }    
 }   
 
+/* Media Query for Mobile Phones and Smaller */
+@media screen and (max-width:575px)  {
+    .child-1 {
+        width: 95%;
+        text-align: center;
+    }
 
+    .child-2 {
+        text-align: center;
+    }
+
+    .item-1 {
+        flex: 0 100%;       
+    }
+
+    .item-2 {
+        flex: 0 100%;
+    }
+
+    .item-3 {
+        flex: 0 100%; 
+    }
+}
+
+    
+/* CSS styling completed */
